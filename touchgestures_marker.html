@@ -39,10 +39,15 @@
             scale="0.05 0.05 0.05"
             class="clickable"
             gesture-handler
-            sound="src: #fire; autoplay: true"
             >
             </a-entity>
-            <a-entity geometry="primitive: box" material="src: url(video.mp4)"></a-entity>
+            <a-entity 
+            geometry="primitive: box" 
+            material="src: url(video.mp4)" 
+            sound="src: #firesound; autoplay: true"
+            position="0 0 0"
+            scale="0.03 0.02 0.01"
+            ></a-entity>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
