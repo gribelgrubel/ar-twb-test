@@ -16,11 +16,18 @@
             <a-asset-item
             id="bowser"
             src="https://cdn.glitch.com/06bd98b4-97ee-4c07-a546-fe39ca205034%2Fbowser.glb"
-            >
-            </a-asset-item>
-            <audio id="firesound" src="fire.mp3" preload="auto"></audio>
+            > </a-asset-item>
+            <audio id="firesound" src="fire.mp3" preload="auto"> </audio>
             <!-- No loop. -->
-            <video id="my-video" src="video.mp4" autoplay="true"></video>
+            <video id="id_video" 
+            src="video.mp4" 
+            autoplay="true"
+            width="160" 
+            height="90"
+            loop="true"
+            crossOrigin="anonymous" 
+            muted
+            > </video>
         </a-assets>
 
         <a-marker
@@ -36,15 +43,16 @@
             position="0 0 0"
             scale="0.05 0.05 0.05"
             class="clickable"
-            gesture-handler
             >
             </a-entity>
             <a-entity 
-            geometry="primitive: box" 
-            material="src: url(video.mp4)" 
+            geometry="primitive: plane; width: 160; height: 90;"
+            material="shader: flat; src: #id_video"
             sound="src: #firesound; autoplay: true"
             position="0 0 0"
-            scale="0.3 0.2 0.1"
+            scale="0.5 0.1 0.3"
+            play-on-click
+            gesture-handler
             ></a-entity>
 
         </a-marker>
