@@ -1,4 +1,8 @@
 
+body{
+    font-family:"CircularXX";
+}
+
 .centered {
     height: 20%;
     justify-content: center;
