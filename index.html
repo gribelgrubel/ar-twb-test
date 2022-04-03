@@ -74,9 +74,11 @@
 
         </a-marker>
 
+
+
         <a-marker
             type="pattern"
-            url="https://raw.githubusercontent.com/gribelgrubel/ar-twb-test/pattern-soul-bleaching.patt"
+            url="pattern-soul-bleaching.patt"
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;"
             id="marker_soulbleaching"
@@ -86,6 +88,34 @@
             position="0 0 0"
             scale="1 1 1"
             ></a-entity>
+        </a-marker>
+
+        <a-marker
+            type="pattern"
+            url="pattern_paradise-practice.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="marker_paradise"
+        >
+            <a-entity
+            id="bowser-model"
+            gltf-model="#bowser"
+            position="0 0 -0.5"
+            scale="1 1 1"
+            >
+            </a-entity>
+            <a-entity 
+            geometry="primitive: plane; width: 1; height: 1;"
+            material="shader: flat; src: #id_video"
+            position="0 0 0"
+            rotation="-90 0 0"
+            play-on-click
+            audiohandler
+            class="clickable"
+            gesture-handler
+            ></a-entity>
+
         </a-marker>
 
         <a-entity camera></a-entity>
