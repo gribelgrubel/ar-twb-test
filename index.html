@@ -28,6 +28,11 @@
             src="paradisepractice.glb"
             > </a-asset-item>
 
+            <a-asset-item
+            id="leuchter"
+            src="leuchter.glb"
+            > </a-asset-item>
+
             <audio id="firesound" src="fire.mp3" preload="auto" autoplay="false"> </audio>
 
             <video id="id_video" 
@@ -68,6 +73,21 @@
             ></a-entity>
 
         </a-marker>
+
+        <a-marker
+            type="pattern"
+            url="https://raw.githubusercontent.com/gribelgrubel/ar-twb-test/pattern-soul-bleaching.patt"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="marker_soulbleaching"
+        >
+            <a-entity 
+            gltf-model="#leuchter"
+            position="0 0 0"
+            scale="1 1 1"
+            ></a-entity>
+        </a-marker>
+
         <a-entity camera></a-entity>
         </a-scene>
 
