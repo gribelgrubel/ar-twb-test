@@ -77,10 +77,10 @@
         </a-marker>
 
 
-        <!-- Marker oranger Leuchter -->
+        <!-- Marker Leuchter bw 1-->
         <a-marker
             type="pattern"
-            url="pattern-soul-bleaching_blackborder.patt"
+            url="pattern-soul-bleaching_bw.patt"
             raycaster="objects: .clickable"
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;"
@@ -93,10 +93,26 @@
             ></a-entity>
         </a-marker>
 
-        <!-- Marker schwarzer Leuchter -->
+        <!-- Marker Leuchter neu-->
         <a-marker
             type="pattern"
-            url="pattern-soul-bleaching_bw.patt"
+            url="pattern-leuchter.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="marker_soulbleaching"
+        >
+            <a-entity 
+            gltf-model="#leuchter"
+            position="0 0 0"
+            scale="1 1 1"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Marker Nagel -->
+        <a-marker
+            type="pattern"
+            url="pattern-nagel.patt"
             raycaster="objects: .clickable"
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;"
@@ -120,6 +136,54 @@
             gesture-handler
             ></a-entity>
 
+        </a-marker>
+
+        <!-- Marker Brunnen-->
+        <a-marker
+            type="pattern"
+            url="pattern-brunnen.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="marker_soulbleaching"
+        >
+            <a-entity 
+            gltf-model="#leuchter"
+            position="0 0 0"
+            scale="1 1 1"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Marker Robot-->
+        <a-marker
+            type="pattern"
+            url="pattern-robot.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="marker_soulbleaching"
+        >
+            <a-entity 
+            gltf-model="#leuchter"
+            position="0 0 0"
+            scale="1 1 1"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Marker Ananas-->
+        <a-marker
+            type="pattern"
+            url="pattern-ananas.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="marker_soulbleaching"
+        >
+            <a-entity 
+            gltf-model="#leuchter"
+            position="0 0 0"
+            scale="1 1 1"
+            ></a-entity>
         </a-marker>
 
         <a-entity camera></a-entity>
